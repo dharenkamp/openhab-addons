@@ -150,7 +150,7 @@ public class NeatoRobot {
                 }
                 request.addParam("navigationMode", navigationMode);
             }
-        } if ("cleanmap".equalsIgnoreCase(command)) {
+        } else if ("cleanmap".equalsIgnoreCase(command)) {
             String houseCleaningStr = this.state.getAvailableServices().getHouseCleaning();
 
             request.setCmd("startCleaning");
